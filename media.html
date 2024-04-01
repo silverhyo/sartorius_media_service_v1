@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <!-- Stylesheet 링크 -->
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- ======================================Sartorius Logo 입니다. -->
+      <div class="sartoriusbox">
+        <div>
+          <a href="menu.html">
+            <img
+              src="image/sartorius-logo-black.png"
+              style="width: 130px; margin: 23px"
+            />
+          </a>
+        </div>
+        <!-- <img
+          src="image/menu-svg-79271--data.svg"
+          style="width: 40px; margin: 20px"
+        /> -->
+        <div id="openspecialistwindow">SPECIALIST</div>
+      </div>
+      <!-- =====================================================Filter -->
+      <form class="filter">
+        <!-- <div class="item">
+          <label for="">Manufacturer</label>
+          <select name="manufacturer">
+            <option value="">---</option>
+            <option value="Sartorius">Sartorius</option>
+            <option value="XellSartorius">Xell(Sartorius)</option>
+            <option value="Merck">Merck</option>
+            <option value="Sigma">Sigma</option>
+          </select>
+        </div> -->
+        <label for="">Aplication</label>
+        <div class="item">
+          <select name="application">
+            <option value="">Select Option</option>
+            <option value="mAb">mAb</option>
+            <option value="Vaccine">Vaccine</option>
+            <option value="CGT">CGT</option>
+            <option value="Proteins">Proteins</option>
+            <option value="MSC_Cell_Therapy">MSC_Cell_Therapy</option>
+            <option value="Exosome">Exosome</option>
+            <option value="Cell_Therapy">Cell_Therapy</option>
+            <option value="동결보존액(DMSO)">동결보존액(DMSO)</option>
+            <option value="냉장보존액">냉장보존액</option>
+            <option value="Cell_Detachment">Cell_Detachment</option>
+            <option value="Stabilty">Cell & Viral & Protein & Drug Stability</option>
+            <option value="Nutrient">Cell Nutrient</option>
+            <option value="Final_Formulation">Fianl Formulation</option>
+            <option value="Surface_Coating">Surface coating(medical device)</option>
+            <option value="Filter_Pretreatment">Filter Pretreatment</option>
+          </select>
+        </div>
+        <label for="">Cell Line</label>
+        <div class="item">
+          <select name="cellline">
+            <option value="">Select Option</option>
+            <option value="CHO">CHO</option>
+            <option value="DG44">CHO-DG44</option>
+            <option value="K1">CHO-K1</option>
+            <option value="S">CHO-S</option>
+            <option value="GS">CHO-GS</option>
+            <option value="HEK293">HEK293 / HEK293T / HEK293F-3F6(NRC)</option>
+            <option value="VERO">VERO</option>
+            <option value="MDCK">MDCK/MDBK Cell Lines</option>
+            <option value="MSC">MSC</option>
+            <option value="Exosome">Exosome</option>
+            <option value="HCS">HCS</option>
+            <option value="NK_Cell">NK_Cell</option>
+            <option value="CAR_T">CAR-T</option>
+            <option value="CAR_NK">CAR-NK</option>
+            <option value="Dendritic_Cell">Dendritic_Cell</option>
+            <option value="T_Cell">T_Cell</option>
+            <option value="Mammalian_Cell">Mammalian_Cell</option>
+            <option value="Stem_Cell">Stem_Cell</option>
+            <option value="Immune_Cell">Immune_Cell</option>
+            <option value="Primary_Cell">Primary_Cell</option>
+            <option value="BHK-21_Cell">BHK-21_Cell</option>
+            <option value="iPS">iPS</option>
+            <option value="ES">ES</option>
+            <option value="hPSC">hPSC</option>
+            <option value="PBMC">PBMC</option>
+            <option value="TIL">TIL</option>
+            <option value="Endothelial_Cell">Endothelial_Cell</option>
+          </select>
+        </div>
+        <label for="">Media Type</label>
+        <div class="item">
+          <select name="mediatype">
+            <option value="" style="color: aqua">Select Option</option>
+            <option value="Liquid">Liquid</option>
+            <option value="Powder">Powder</option>
+          </select>
+        </div>
+        <!-- <div class="item">
+                <label for="">Min Price</label>
+                <input type="number" name="minPrice">
+            </div>
+            <div class="item">
+                <label for="">Max Price</label>
+                <input type="number" name="maxPrice">
+            </div> -->
+        <label for="">Name</label>
+        <div class="item">
+          <input type="text" name="name" />
+        </div>
+        <div class="item submit">
+          <button>Search</button>
+        </div>
+      </form>
+
+      <!-- =============================================CountResults -->
+      <div class="countResults"><b id="count"></b> results</div>
+
+      <!-- ======================================================list -->
+      <div id="list">
+        <!-- <div class="item">
+                <img src="#.jpg">
+                <div class="title">Name Product</div>
+                <div class="brand"></div>
+            </div> -->
+      </div>
+
+      <!-- ==================================================Footer -->
+      <div id="footer" class="footer">
+        <div class="sartoriusend">
+          <a href="https://www.facebook.com/sartoriuskorea/"
+            ><img src="image/facebook.png"
+          /></a>
+          <a href="https://www.instagram.com/sartorius_korea/"
+            ><img src="image/instagram.png"
+          /></a>
+          <a href="https://www.linkedin.com/company/sartorius-korea-biotech/"
+            ><img src="image/linkedin.png"
+          /></a>
+          <a
+            href="https://www.youtube.com/channel/UCVtHwPdfhQ0FCJATtMyeW2g?app=desktop"
+            ><img src="image/youtube.png"
+          /></a>
+        </div>
+        <div>
+          <p style="color: white; text-align: center; margin: 20px">
+            Sartorius
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================================================POPUP_WINDOW -->
+
+    <div id="previewcon" class="preview_container">
+      <!-- <div class="previewbox active" data-target='p_01'>
+            <div class="preview">
+                <img src="image/Xell CAP_CDM_Feed Liquid.jpg">
+                <div class="closebutton">close</div>
+                <div class="datasheetbutton">
+                    <a href=''>
+                        DataSheet
+                    </a>
+                </div>
+                
+                <div class="incharge">
+                    <a href='tel:01099263616'>
+                        문의하기
+                    </a>
+                </div>
+
+                <div class="mailto">
+                    <a href='tel:01099263616'>
+                        메일보내기
+                    </a>
+                </div>
+
+            </div>
+            <br>
+            <h3>ABCDEFG</h3>
+            <div class="medianame"></div>
+            <div class="description"></div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+        </div> -->
+    </div>
+
+    <!-- ==============================================Special List -->
+    <div id="specialistcontainer" class="fadeout">
+      <div class="specialistbox">
+        <div class="specialistchart">SPECIALIST INFORMATION</div>
+        <div class="buttonbox01">
+          <div id="closebutton01">close</div>
+        </div>
+
+        <div class="specialist">
+          <!-- SPECIALIST_01 -->
+          <div class="specialist01">
+            <div class="name">김서윤 부장 (April.Kim)</div>
+            <div class="email">april.kim@sartorius.co.kr</div>
+            <div class="tel"><a href="tel:01099263616">문의하기</a></div>
+          </div>
+
+          <!-- SPECIALIST_02 -->
+          <div class="specialist02">
+            <div class="name">장두재 과장 (Doojae.Jang)</div>
+            <div class="email">april.kim@sartorius.co.kr</div>
+            <div class="tel"><a href="tel:01099263616">문의하기</a></div>
+          </div>
+
+          <!-- SPECIALIST_03 -->
+          <div class="specialist03">
+            <div class="name">손재우 과장 (April.Kim)</div>
+            <div class="email">april.kim@sartorius.co.kr</div>
+            <div class="tel"><a href="tel:01099263616">문의하기</a></div>
+          </div>
+
+          <!-- SPECIALIST_04 -->
+          <div class="specialist04">
+            <div class="name">이윤서 사원 (Sa.Lee)</div>
+            <div class="email">april.kim@sartorius.co.kr</div>
+            <div class="tel"><a href="tel:01099263616">문의하기</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

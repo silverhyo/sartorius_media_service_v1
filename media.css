@@ -1,0 +1,499 @@
+/*fonts.css*/
+@font-face {
+  font-family: "TT-norms";
+  src: url("srcs/TT\ Norms\ Pro\ Regular.ttf") format("truetype");
+}
+
+/* 폰트 적용 */
+body {
+  font-family: "TT-norms";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 14px;
+  /* background-image: linear-gradient(to bottom right, #4f4b50, #f0efe5); */
+}
+
+.container {
+  /* background-color: #fff100; */
+  width: 1000px;
+  max-width: 100%;
+  height: 100%;
+  margin: 0 auto 0;
+  border-radius: 0px;
+  animation-duration: 1s;
+  animation-name: fadeinout;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =====================================================Sartorius_Logo */
+
+.sartoriusbox {
+  width: 100%;
+  height: 100px;
+  background-color: #ffed00;
+  /* position: relative; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.sartorius_logo {
+  width: 130px;
+  position: absolute;
+  left: 20px;
+  top: 30%;
+  /* animation-duration: 3s;
+    animation-name: slidein_logo; */
+}
+
+@keyframes slidein_logo {
+  from {
+    margin-left: 100px;
+    width: 130px;
+  }
+
+  to {
+    /* .sartorius_logo에서 image의 위치는 left와 top으로 정해졌지만 animation에서의 위치는 다르다 */
+    margin-left: 0px;
+    width: 130px;
+  }
+}
+
+#openspecialistwindow {
+  /* position: absolute; */
+  width: 90px;
+  height: 25px;
+  margin: 23px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  line-height: 25px;
+  right: 10px;
+  bottom: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* ========================================================Form Filter */
+.filter {
+  margin-top: 10px;
+  padding: 10px 20px;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  justify-content: center;
+  column-gap: 1%;
+  row-gap: 10px;
+  border: 0px solid black;
+}
+
+.filter label {
+  font-weight: bold;
+  margin-left: 1px;
+}
+
+.filter .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px 0px 7px 0px;
+}
+
+.filter .item select,
+.filter .item input {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  border: none;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #dadada;
+  outline: none;
+  font-family: "TT-norms";
+}
+
+.filter .item label {
+  display: block;
+  width: 75%;
+  padding: 0 5px;
+  font-size: 12px;
+}
+
+.filter .item button {
+  background-color: #ffed00;
+  width: 100%;
+  height: 40px;
+  color: black;
+  cursor: pointer;
+  margin: 10px 0px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  font-family: "TT-norms";
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* ==========================================================countResults */
+
+.countResults {
+  width: 100%;
+  height: 45px;
+  /* background-color: #ffed00; */
+  font-size: 17px;
+  text-align: center;
+  line-height: 45px;
+  padding: 0;
+}
+
+/* ================================================================List */
+
+#list {
+  padding: 10px 20px;
+  display: grid;
+  column-gap: 1.2%;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 5px;
+  text-align: center;
+}
+
+#list .item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  /* margin: 5px 0; */
+  border-radius: 0px;
+  cursor: pointer;
+  animation-duration: 1s;
+  animation-name: fadeinout;
+}
+
+@keyframes fadeinout {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#list .item {
+  background-color: #ffed00;
+  text-align: center;
+  border-radius: 0;
+}
+
+#list .item .title {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#list .item .brand {
+  color: black;
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding: 10px;
+}
+
+/* ===============================================================footer */
+
+.footer {
+  margin-top: 50px;
+  height: 170px;
+  background-color: black;
+}
+
+.sartoriusend {
+  /* Bottom을 0으로 할 경우 list 부분의 내용이 잘릴 수 있다. 이 떄 scroll을 써보면 어떨까? */
+  /* bottom: 0; */
+  width: 100%;
+  bottom: 0px;
+  margin-top: 0px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .sartoriusend img {
+  width: 40px;
+  /* bottom: 0px; */
+  filter: invert(100%);
+  margin: 8px;
+}
+
+/* ========================================================POPUP_Window */
+
+.preview_container .preview,
+.description {
+  border: 0px solid black;
+}
+
+/* display: none / flex으로 해야 ? */
+.preview_container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* min-height: 100vh; */
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview_container .previewbox {
+  width: 360px;
+  height: 700px;
+  display: none;
+  padding: 0px;
+  text-align: center;
+  background-color: white;
+  position: relative;
+  /* border-radius: 0 0 10px 10px; */
+  animation-duration: 0.5s;
+  animation-name: fadeinout01;
+}
+
+@keyframes fadeinout01 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.preview_container .previewbox.active {
+  display: inline-block;
+}
+
+.previewbox .preview {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.closebutton {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  /* background-color: black; */
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  text-align: center;
+  line-height: 40px;
+  top: 0;
+  right: 0;
+  /* border-radius: 0 0 0 30%; */
+  cursor: pointer;
+}
+
+.datasheetbutton,
+.incharge,
+.mailto {
+  position: absolute;
+  width: 120px;
+  height: 40px;
+  background-color: black;
+  text-align: center;
+  line-height: 10px;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.datasheetbutton a {
+  color: white;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.incharge {
+  background-color: #dadada;
+  color: black;
+  right: 120px;
+}
+
+.incharge a {
+  color: black;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.mailto {
+  background-color: #ffed00;
+  color: black;
+  right: 240px;
+  cursor: pointer;
+}
+
+.mailto a {
+  color: black;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.preview_container .previewbox .preview img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transform: scale(1.0);
+}
+
+.description {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 30px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.description ul li {
+  font-size: 12px;
+  text-align: left;
+  list-style: none;
+  margin-bottom: 3px;
+}
+
+/* ======================================================== SPECIAL LIST */
+
+#specialistcontainer,
+.specialistbox,
+.buttonbox01,
+.specialist,
+.specialist01,
+.specialist02,
+.specialist03,
+.specialist04 {
+  border: 0px solid red;
+}
+
+#specialistcontainer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+  animation-duration: 1s;
+  animation-name: fadeinout02;
+}
+
+@keyframes fadeinout02 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.specialistbox {
+  width: 350px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color: white;
+  position: relative;
+}
+
+.specialistchart {
+  position: absolute;
+  width: 85%;
+  height: 50px;
+  background-color: #ffed00;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.buttonbox01 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15%;
+  height: 50px;
+  background-color: black;
+  border-radius: 0 0 0 0;
+}
+
+#closebutton01 {
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.specialist {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: 5px;
+  margin-top: 80px;
+  padding: 10px;
+}
+
+/* ===========================SEPCIALIST= */
+
+.specialist01,
+.specialist02,
+.specialist03,
+.specialist04 {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  /* background-image: url("specialist/프리지아_03.jpg"); */
+  background-size: 100%;
+  background-position: center;
+  font-size: 14px;
+  text-align: right;
+}
+.name {
+  margin-top: 70px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+}
+.email {
+  font-size: 12px;
+}
+.tel {
+  width: 150px;
+  height: 20px;
+  background-color: #ffed00;
+  color: black;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 20px;
+}
